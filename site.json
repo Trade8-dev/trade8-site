@@ -1,0 +1,146 @@
+{
+  "vertical": "trade8",
+  "name": "Trade8",
+  "org": "Trade8-dev",
+  "domain": "trade8.dev",
+  "tagline": "Professional trading on Sentin8 — order management, broker connectivity, synchronous pre-trade risk, market data, bar aggregation, and day P&L as one broker-side vertical.",
+  "accent": "#B85450",
+  "pillarsLead": "Trade8 inherits the Sentin8 security model and adds trading guarantees — synchronous risk gates on every mutation, deterministic P&L from fill replay, and adapter-pluggable market data.",
+  "pillars": [
+    {
+      "title": "Risk before acceptance",
+      "summary": "Desk calls Risk over a direct TLS path before accepting any order mutation — buying power, exposure, and restricted symbols are checked synchronously, never after the fact."
+    },
+    {
+      "title": "One order lifecycle",
+      "summary": "Desk owns submit → validate → authorize → accept → route → track → terminal; every state transition is event-sourced and auditable."
+    },
+    {
+      "title": "Deterministic P&L",
+      "summary": "Pnl is a pure bus consumer: positions and day P&L rebuild deterministically from fill events and opening balances — the same fills always produce the same P&L."
+    },
+    {
+      "title": "Pluggable market data",
+      "summary": "Feed ingests vendor quotes through adapters (ITCH, IDC, crypto websocket, FIX-MD, simulation) and normalizes them into one internal event shape."
+    },
+    {
+      "title": "Bars for every window",
+      "summary": "Bars aggregates OHLCV at standard intervals (1s…1d) from consolidated trade prints — live intrabar snapshots and historical series from one engine."
+    }
+  ],
+  "units": [
+    {
+      "slug": "desk",
+      "kind": "service",
+      "name": "Trade8:Desk",
+      "repo": "trade8-desk",
+      "org": "Trade8-dev",
+      "summary": "The order-management core: owns the order lifecycle (submit → validate → authorize → accept → route → track → terminal) and the working-order state.",
+      "scopes": [
+        "trade8:desk:orders:write",
+        "trade8:desk:positions:read"
+      ]
+    },
+    {
+      "slug": "router",
+      "kind": "service",
+      "name": "Trade8:Router",
+      "repo": "trade8-router",
+      "org": "Trade8-dev",
+      "summary": "All outbound broker connectivity: consumes routed orders from Desk, resolves the destination route (market → gateway → broker), executes, and reports fills back.",
+      "scopes": [
+        "trade8:router:routes:write",
+        "trade8:router:fills:read"
+      ]
+    },
+    {
+      "slug": "risk",
+      "kind": "service",
+      "name": "Trade8:Risk",
+      "repo": "trade8-risk",
+      "org": "Trade8-dev",
+      "summary": "The synchronous, in-env pre-trade authorization gate: evaluates trader state, buying power (reserved notionals), and limits before any order mutation is accepted.",
+      "scopes": [
+        "trade8:risk:authorize:write",
+        "trade8:risk:limits:read"
+      ]
+    },
+    {
+      "slug": "feed",
+      "kind": "service",
+      "name": "Trade8:Feed",
+      "repo": "trade8-feed",
+      "org": "Trade8-dev",
+      "summary": "The market-data tier: vendor quotes through pluggable adapters (ITCH, IDC, crypto websocket, FIX-MD, simulation), normalized into one internal event shape (L1 BBO, trades, depth).",
+      "scopes": [
+        "trade8:feed:quotes:read",
+        "trade8:feed:trades:read"
+      ]
+    },
+    {
+      "slug": "bars",
+      "kind": "service",
+      "name": "Trade8:Bars",
+      "repo": "trade8-bars",
+      "org": "Trade8-dev",
+      "summary": "OHLCV bar aggregation: consumes consolidated trade prints and aggregates bars at standard intervals (1s, 1m, 5m, 15m, 1h, 1d) for live charting and historical series.",
+      "scopes": [
+        "trade8:bars:ohlcv:read"
+      ]
+    },
+    {
+      "slug": "pnl",
+      "kind": "service",
+      "name": "Trade8:Pnl",
+      "repo": "trade8-pnl",
+      "org": "Trade8-dev",
+      "summary": "The day profit-and-loss engine: a pure bus consumer that rebuilds positions and P&L deterministically from fill events and opening balances.",
+      "scopes": [
+        "trade8:pnl:positions:read",
+        "trade8:pnl:day:read"
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "slug": "etrader",
+      "kind": "app",
+      "name": "eTrader",
+      "repo": "trade8-etrader",
+      "org": "Trade8-dev",
+      "summary": "The professional trading app: order entry tickets, blotter, market data watch, positions and day P&L — through the BFF proxy like every app."
+    }
+  ],
+  "sdks": [
+    {
+      "slug": "sdk",
+      "kind": "sdk",
+      "name": "trade8 Rust SDK",
+      "repo": "trade8-sdk",
+      "org": "Trade8-dev",
+      "summary": "The shared vertical plane: fixed/Price-Qty math, protocol codecs, event contracts, and typed clients every trade8 service and integrator consumes.",
+      "href": "/docs/sdk/"
+    }
+  ],
+  "showcaseTitle": "Built on the Sentin8 platform",
+  "showcaseLead": "Trade8 contains no platform infrastructure of its own — identity, events, storage, scheduling, and supervision are consumed from the platform.",
+  "showcase": [
+    {
+      "slug": "sentin8",
+      "name": "Sentin8 — the platform",
+      "chip": "sentin8.dev",
+      "accent": "#D4AF37",
+      "summary": "17 services: identity, events, storage, workflows, scheduling — everything trade8 doesn't rebuild.",
+      "href": "https://sentin8.dev/"
+    },
+    {
+      "slug": "exchange8",
+      "name": "Exchange8",
+      "chip": "exchange8.dev",
+      "accent": "#2E9B8F",
+      "summary": "The venue-side vertical — run an exchange or MTF on the same platform.",
+      "href": "https://exchange8.dev/"
+    }
+  ],
+  "crossrefs": []
+}
