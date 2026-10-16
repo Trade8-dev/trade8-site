@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Samples
 
-First calls against a running trade8 deployment — through the BFF
+First calls against a running trade8 deployment - through the BFF
 proxy, from cURL and Dart.
 
 ## 1. Submit an order
@@ -27,7 +27,7 @@ curl -b jar.txt \
   }'
 ```
 
-Desk calls Risk synchronously before accepting — the 201 means the
+Desk calls Risk synchronously before accepting - the 201 means the
 order passed buying power and limit checks and is routing.
 
 ## 2. Watch positions and day P&L
@@ -66,7 +66,7 @@ final ticket = await bff.post('desk', '/v1/orders', body: {
 ## 5. From Rust (vertical consumer)
 
 ```rust
-use trade8_sdk::math::PriceQty;        // fixed-point — no float drift
+use trade8_sdk::math::PriceQty;        // fixed-point - no float drift
 use trade8_sdk::events::FillExecuted;  // the fill event contract
 
 let qty = PriceQty::from_str("100")?;

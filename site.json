@@ -3,13 +3,13 @@
   "name": "Trade8",
   "org": "Trade8-dev",
   "domain": "trade8.dev",
-  "tagline": "Professional trading on Sentin8 — order management, broker connectivity, synchronous pre-trade risk, market data, bar aggregation, and day P&L as one broker-side vertical.",
+  "tagline": "Professional trading on Sentin8 - order management, broker connectivity, synchronous pre-trade risk, market data, bar aggregation, and day P&L as one broker-side vertical.",
   "accent": "#B85450",
-  "pillarsLead": "Trade8 inherits the Sentin8 security model and adds trading guarantees — synchronous risk gates on every mutation, deterministic P&L from fill replay, and adapter-pluggable market data.",
+  "pillarsLead": "Trade8 inherits the Sentin8 security model and adds trading guarantees - synchronous risk gates on every mutation, deterministic P&L from fill replay, and adapter-pluggable market data.",
   "pillars": [
     {
       "title": "Risk before acceptance",
-      "summary": "Desk calls Risk over a direct TLS path before accepting any order mutation — buying power, exposure, and restricted symbols are checked synchronously, never after the fact."
+      "summary": "Desk calls Risk over a direct TLS path before accepting any order mutation - buying power, exposure, and restricted symbols are checked synchronously, never after the fact."
     },
     {
       "title": "One order lifecycle",
@@ -17,7 +17,7 @@
     },
     {
       "title": "Deterministic P&L",
-      "summary": "Pnl is a pure bus consumer: positions and day P&L rebuild deterministically from fill events and opening balances — the same fills always produce the same P&L."
+      "summary": "Pnl is a pure bus consumer: positions and day P&L rebuild deterministically from fill events and opening balances - the same fills always produce the same P&L."
     },
     {
       "title": "Pluggable market data",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Bars for every window",
-      "summary": "Bars aggregates OHLCV at standard intervals (1s…1d) from consolidated trade prints — live intrabar snapshots and historical series from one engine."
+      "summary": "Bars aggregates OHLCV at standard intervals (1s…1d) from consolidated trade prints - live intrabar snapshots and historical series from one engine."
     }
   ],
   "units": [
@@ -108,7 +108,7 @@
       "name": "eTrader",
       "repo": "trade8-etrader",
       "org": "Trade8-dev",
-      "summary": "The professional trading app: order entry tickets, blotter, market data watch, positions and day P&L — through the BFF proxy like every app."
+      "summary": "The professional trading app: order entry tickets, blotter, market data watch, positions and day P&L - through the BFF proxy like every app."
     }
   ],
   "sdks": [
@@ -123,14 +123,14 @@
     }
   ],
   "showcaseTitle": "Built on the Sentin8 platform",
-  "showcaseLead": "Trade8 contains no platform infrastructure of its own — identity, events, storage, scheduling, and supervision are consumed from the platform.",
+  "showcaseLead": "Trade8 contains no platform infrastructure of its own - identity, events, storage, scheduling, and supervision are consumed from the platform.",
   "showcase": [
     {
       "slug": "sentin8",
-      "name": "Sentin8 — the platform",
+      "name": "Sentin8 - the platform",
       "chip": "sentin8.dev",
       "accent": "#D4AF37",
-      "summary": "17 services: identity, events, storage, workflows, scheduling — everything trade8 doesn't rebuild.",
+      "summary": "17 services: identity, events, storage, workflows, scheduling - everything trade8 doesn't rebuild.",
       "href": "https://sentin8.dev/"
     },
     {
@@ -138,7 +138,7 @@
       "name": "Exchange8",
       "chip": "exchange8.dev",
       "accent": "#2E9B8F",
-      "summary": "The venue-side vertical — run an exchange or MTF on the same platform.",
+      "summary": "The venue-side vertical - run an exchange or MTF on the same platform.",
       "href": "https://exchange8.dev/"
     }
   ],

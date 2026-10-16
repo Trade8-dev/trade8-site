@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Trade8:Router — broker connectivity
+# Trade8:Router - broker connectivity
 
 All outbound broker connectivity: it consumes routed orders from
 Trade8:Desk (`trade8:desk:order:accepted`), resolves the destination
@@ -11,13 +11,13 @@ as events.
 
 ## Use cases
 
-- **Route resolution** — market → gateway → broker with
+- **Route resolution** - market → gateway → broker with
   off-hours/route-fallback rules; the routing table is data, not
   code.
-- **Execution** — orders dispatch to the resolved broker with the
+- **Execution** - orders dispatch to the resolved broker with the
   broker's native protocol; timeouts and rejects map to deterministic
   order states.
-- **Fill reporting** — every execution reports
+- **Fill reporting** - every execution reports
   `trade8:router:fill:executed`; Pnl and the blotter consume the same
   event stream.
 
@@ -25,8 +25,8 @@ as events.
 
 The complete detail lives in this product's sub-pages:
 
-- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
-- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
-- [Security](security) — the full document, harvested from the unit's repository at build time.
-- [Overview (repo README)](/docs/reference/router/) — the maintainer's README in the consolidated reference section.
+- [Architecture (DDD)](design) - the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) - the full document, harvested from the unit's repository at build time.
+- [Security](security) - the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/router/) - the maintainer's README in the consolidated reference section.
 

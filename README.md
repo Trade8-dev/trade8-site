@@ -1,4 +1,4 @@
-# README.md: Trade8:Site — trade8.dev
+# README.md: Trade8:Site - trade8.dev
 
 > The Trade8 public website at [trade8.dev](https://trade8.dev): every
 > product, app, and SDK of the vertical, with its domain invariants
@@ -12,7 +12,7 @@ trade8.dev is the Trade8 vertical's product site: a landing page
 detailing all six products and one apps, per-product
 pages with use cases and API surfaces, the vertical's security
 invariants, developer lifecycle, samples, and a **Reference** section
-harvested at build time from each unit repo's own docs — the
+harvested at build time from each unit repo's own docs - the
 repositories stay the source of truth.
 
 ## 2. Motivation

@@ -5,7 +5,7 @@ sidebar_position: 1
 # trade8 Rust SDK
 
 The shared vertical plane: fixed-point Price/Qty math, protocol
-codecs, the event contracts (order/fill/print), and typed clients —
+codecs, the event contracts (order/fill/print), and typed clients -
 consumed by every trade8 service and by external integrators as a
 pinned git tag.
 
@@ -25,7 +25,7 @@ use trade8_sdk::events::{OrderAccepted, FillExecuted};
 
 ## Why a shared plane
 
-Every trade8 service links the same math and contracts — a fill
+Every trade8 service links the same math and contracts - a fill
 reported by Router, journaled by Desk, aggregated by Pnl, and drawn
 by eTrader carries bit-identical numbers end to end. The SDK plane
 is the single source of that truth (SDD's shared-plane linkage
@@ -34,5 +34,5 @@ crates).
 
 ## Deep dive
 
-[trade8-sdk reference](/docs/reference/sdk/) — harvested from
+[trade8-sdk reference](/docs/reference/sdk/) - harvested from
 `Trade8-dev/trade8-sdk`.

@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Trade8:Feed — market data
+# Trade8:Feed - market data
 
 The market-data tier: it ingests vendor quotes through pluggable
 adapters (ITCH, IDC, crypto websocket, FIX-MD, simulation),
@@ -11,20 +11,20 @@ depth), and publishes to every consumer.
 
 ## Use cases
 
-- **Vendor adapters** — each vendor plugs as an adapter; adding a
+- **Vendor adapters** - each vendor plugs as an adapter; adding a
   data source is a new adapter, not a core change.
-- **One event shape** — L1 BBO, trade prints, and depth normalize
+- **One event shape** - L1 BBO, trade prints, and depth normalize
   regardless of the source; Bars, the app, and analytics consume
   one shape.
-- **Simulation** — the simulation adapter feeds deterministic test
+- **Simulation** - the simulation adapter feeds deterministic test
   scenarios for strategy and P&L verification.
 
 ## Full documentation
 
 The complete detail lives in this product's sub-pages:
 
-- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
-- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
-- [Security](security) — the full document, harvested from the unit's repository at build time.
-- [Overview (repo README)](/docs/reference/feed/) — the maintainer's README in the consolidated reference section.
+- [Architecture (DDD)](design) - the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) - the full document, harvested from the unit's repository at build time.
+- [Security](security) - the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/feed/) - the maintainer's README in the consolidated reference section.
 
