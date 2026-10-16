@@ -21,7 +21,12 @@ machine per order.
 - **Blotter truth** — the working-order state feeds the eTrader
   blotter; fills project in as Router reports them.
 
-## Deep dive
+## Full documentation
 
-[Desk reference](/docs/reference/desk/) — README, DESIGN, BUSINESS
-harvested from `Trade8-dev/trade8-desk`.
+The complete detail lives in this product's sub-pages:
+
+- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/desk/) — the maintainer's README in the consolidated reference section.
+

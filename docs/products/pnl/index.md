@@ -17,7 +17,12 @@ positions and P&L deterministically from fill events
 - **Day boundaries** — the trading day closes through scheduled
   platform work; opening balances carry to the next session.
 
-## Deep dive
+## Full documentation
 
-[Pnl reference](/docs/reference/pnl/) — harvested from
-`Trade8-dev/trade8-pnl`.
+The complete detail lives in this product's sub-pages:
+
+- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/pnl/) — the maintainer's README in the consolidated reference section.
+

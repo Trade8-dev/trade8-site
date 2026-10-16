@@ -20,7 +20,12 @@ limits — never after the fact.
   through the admin surface and take effect immediately (live
   authorization, the platform's model, applied to market risk).
 
-## Deep dive
+## Full documentation
 
-[Risk reference](/docs/reference/risk/) — harvested from
-`Trade8-dev/trade8-risk`.
+The complete detail lives in this product's sub-pages:
+
+- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/risk/) — the maintainer's README in the consolidated reference section.
+

@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import {
-  Hero, Section, ProductGrid, AppGrid, SdkGrid, VerticalShowcase, SecurityPillars,
+  Hero, Section, StartHere, ProductGrid, AppGrid, SdkGrid, VerticalShowcase, SecurityPillars,
 } from '@sentin8/site-engine/components';
 import site from '../../site.json';
 
@@ -22,6 +22,25 @@ export default function Home() {
             { label: 'GitHub', href: 'https://github.com/' + site.org },
           ]}
         />
+        <StartHere items={[
+          {
+            title: 'Product tour',
+            description: 'What Trade8 is — order management, broker connectivity, risk, market data, and day P&L.',
+            href: '/docs',
+            primary: true,
+          },
+          {
+            title: 'Security',
+            description: 'Trading guarantees: risk before acceptance, one order lifecycle, deterministic P&L.',
+            href: '/docs/security',
+          },
+          {
+            title: 'Get started',
+            description: 'Clone one repo and build — the developer quickstart, samples, and every API surface.',
+            href: '/docs/developers',
+          },
+        ]} />
+
 
         {site.units?.length ? (
           <Section

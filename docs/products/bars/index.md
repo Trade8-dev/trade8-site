@@ -18,7 +18,12 @@ intervals — 1s, 1m, 5m, 15m, 1h, 1d — serving both live charting
 - **Deterministic aggregation** — the same prints always produce the
   same bars; corrections replay cleanly.
 
-## Deep dive
+## Full documentation
 
-[Bars reference](/docs/reference/bars/) — harvested from
-`Trade8-dev/trade8-bars`.
+The complete detail lives in this product's sub-pages:
+
+- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/bars/) — the maintainer's README in the consolidated reference section.
+

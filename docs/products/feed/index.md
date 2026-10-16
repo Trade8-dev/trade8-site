@@ -19,7 +19,12 @@ depth), and publishes to every consumer.
 - **Simulation** — the simulation adapter feeds deterministic test
   scenarios for strategy and P&L verification.
 
-## Deep dive
+## Full documentation
 
-[Feed reference](/docs/reference/feed/) — harvested from
-`Trade8-dev/trade8-feed`.
+The complete detail lives in this product's sub-pages:
+
+- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/feed/) — the maintainer's README in the consolidated reference section.
+

@@ -21,7 +21,12 @@ as events.
   `trade8:router:fill:executed`; Pnl and the blotter consume the same
   event stream.
 
-## Deep dive
+## Full documentation
 
-[Router reference](/docs/reference/router/) — harvested from
-`Trade8-dev/trade8-router`.
+The complete detail lives in this product's sub-pages:
+
+- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/router/) — the maintainer's README in the consolidated reference section.
+
