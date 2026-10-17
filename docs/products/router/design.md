@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Trade8-dev/trade8-router/edit/main/DESIGN.md
 ---
-# DESIGN.md: Trade8:Router - Detailed Design Document
+# Trade8:Router - Detailed Design Document
 
 > Audience: maintainers, reviewers, and architects modifying the service.
 > Overview in `README.md`; business functionality in `BUSINESS.md`.

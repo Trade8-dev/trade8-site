@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Trade8-dev/trade8-etrader/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: etrader - Trade8 Professional Trading App
+# etrader - Trade8 Professional Trading App
 
 > Audience: product owners and business stakeholders. For architecture
 > read `README.md`; for the platform app contract read

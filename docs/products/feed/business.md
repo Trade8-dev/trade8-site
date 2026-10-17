@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Trade8-dev/trade8-feed/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: Trade8:Feed - Business Requirements & Functionality
+# Trade8:Feed - Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > Trade8:Feed **does for the business**. For architecture read `README.md`;

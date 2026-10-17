@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Trade8-dev/trade8-risk/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: Trade8:Risk - Business Requirements & Functionality
+# Trade8:Risk - Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > Trade8:Risk **does for the business**. For architecture read `README.md`;

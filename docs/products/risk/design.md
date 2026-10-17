@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Trade8-dev/trade8-risk/edit/main/DESIGN.md
 ---
-# DESIGN.md: Trade8:Risk - Detailed Design Document
+# Trade8:Risk - Detailed Design Document
 
 > Audience: maintainers, reviewers, and architects modifying the service.
 > Overview in `README.md`; business functionality in `BUSINESS.md`.
