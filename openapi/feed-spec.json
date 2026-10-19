@@ -31,7 +31,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `admin_alerts`."
+        "description": "Admin alerts.\n\nSpec wrapper for `admin_alerts`."
       }
     },
     "/v1/admin/alerts/{id}/ack": {
@@ -55,7 +55,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `admin_ack_alert` (GET probe)."
+        "description": "Admin ack alert.\n\nSpec wrapper for `admin_ack_alert` (GET probe)."
       },
       "post": {
         "tags": [
@@ -77,7 +77,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the POST binding of `admin_ack_alert` - utoipa\nallows one served path per annotated fn, so the second binding gets\nits own."
+        "description": "Admin ack alert post.\n\nSpec wrapper for the POST binding of `admin_ack_alert` - utoipa\nallows one served path per annotated fn, so the second binding gets\nits own."
       }
     },
     "/v1/admin/attributes": {
@@ -107,6 +107,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -143,6 +144,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -174,6 +176,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -198,7 +201,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `admin_feeds`."
+        "description": "Admin feeds.\n\nSpec wrapper for `admin_feeds`."
       }
     },
     "/v1/admin/policy-sets": {
@@ -228,6 +231,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       }
     },
@@ -258,6 +262,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -288,6 +293,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -318,6 +324,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -359,6 +366,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -406,6 +414,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -437,6 +446,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -483,6 +493,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -513,6 +524,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -549,6 +561,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -580,6 +593,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -636,6 +650,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -660,7 +675,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `admin_sources`."
+        "description": "Admin sources.\n\nSpec wrapper for `admin_sources`."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -684,7 +699,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `get_admin_ui`."
+        "description": "Get admin ui.\n\nSpec wrapper for `get_admin_ui`."
       }
     },
     "/v1/alerts": {
@@ -708,7 +723,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `list_alerts`."
+        "description": "List alerts.\n\nSpec wrapper for `list_alerts`."
       },
       "post": {
         "tags": [
@@ -730,7 +745,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `create_alert`."
+        "description": "Create alert.\n\nSpec wrapper for `create_alert`."
       }
     },
     "/v1/depth/{symbol}": {
@@ -754,7 +769,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `depth`."
+        "description": "Depth .\n\nSpec wrapper for `depth`."
       }
     },
     "/v1/feeds": {
@@ -778,7 +793,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `list_feeds`."
+        "description": "List feeds.\n\nSpec wrapper for `list_feeds`."
       }
     },
     "/v1/health": {
@@ -799,7 +814,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the inline health closure."
+        "description": "Health .\n\nSpec wrapper for the inline health closure."
       }
     },
     "/v1/quotes/{symbol}": {
@@ -823,7 +838,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `quote`."
+        "description": "Quote .\n\nSpec wrapper for `quote`."
       }
     },
     "/v1/stream/{symbol}": {
@@ -847,7 +862,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for `sse_symbol`."
+        "description": "Sse symbol.\n\nSpec wrapper for `sse_symbol`."
       }
     }
   },

@@ -37,6 +37,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -73,6 +74,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -104,6 +106,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -131,7 +134,7 @@
           }
         },
         "security": [],
-        "description": "snapshot live exposure."
+        "description": "Admin exposure.\n\nsnapshot live exposure."
       }
     },
     "/v1/admin/levels": {
@@ -158,7 +161,7 @@
           }
         },
         "security": [],
-        "description": "risk level ladder + actions."
+        "description": "Admin levels.\n\nrisk level ladder + actions."
       }
     },
     "/v1/admin/limits": {
@@ -185,7 +188,7 @@
           }
         },
         "security": [],
-        "description": "limit rows from the DB (source of truth)."
+        "description": "Admin limits.\n\nlimit rows from the DB (source of truth)."
       }
     },
     "/v1/admin/policy-sets": {
@@ -215,6 +218,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       }
     },
@@ -245,6 +249,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -275,6 +280,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -305,6 +311,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -346,6 +353,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -393,6 +401,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -424,6 +433,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -470,6 +480,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -500,6 +511,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -536,6 +548,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -567,6 +580,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -623,6 +637,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -650,7 +665,7 @@
           }
         },
         "security": [],
-        "description": "execution restriction rows."
+        "description": "Admin restrictions.\n\nexecution restriction rows."
       }
     },
     "/v1/admin/traders": {
@@ -677,7 +692,7 @@
           }
         },
         "security": [],
-        "description": "trader risk states."
+        "description": "Admin traders.\n\ntrader risk states."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -704,7 +719,7 @@
           }
         },
         "security": [],
-        "description": "RFW definitions."
+        "description": "Get admin ui.\n\nRFW definitions."
       }
     },
     "/v1/authorize": {
@@ -731,7 +746,7 @@
           }
         },
         "security": [],
-        "description": "The hot-path authorize call. M2M-only (Desk / Func) - the BFF does not\nproxy this route; scope check enforces the service scope."
+        "description": "Authorize .\n\nThe hot-path authorize call. M2M-only (Desk / Func) - the BFF does not\nproxy this route; scope check enforces the service scope."
       }
     },
     "/v1/health": {
@@ -752,7 +767,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the inline health closure (binary has no named fn)."
+        "description": "Risk health.\n\nSpec wrapper for the inline health closure (binary has no named fn)."
       }
     },
     "/v1/limits": {
@@ -778,6 +793,7 @@
           }
         },
         "security": [],
+        "description": "List limits.",
         "summary": "`GET /v1/limits`"
       },
       "post": {
@@ -802,6 +818,7 @@
           }
         },
         "security": [],
+        "description": "Create limit.",
         "summary": "`POST /v1/limits`"
       }
     },
@@ -828,6 +845,7 @@
           }
         },
         "security": [],
+        "description": "Trader state.",
         "summary": "`GET /v1/trader-state`"
       },
       "post": {
@@ -852,6 +870,7 @@
           }
         },
         "security": [],
+        "description": "Set trader state.",
         "summary": "`POST /v1/trader-state`"
       }
     },
@@ -878,6 +897,7 @@
           }
         },
         "security": [],
+        "description": "Trader state one.",
         "summary": "`GET /v1/trader-state/{usr_id}`"
       }
     }

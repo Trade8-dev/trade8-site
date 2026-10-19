@@ -37,6 +37,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -73,6 +74,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -104,6 +106,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -131,7 +134,7 @@
           }
         },
         "security": [],
-        "description": "the reconcile queue feed. Mismatches are\ntransient (outbox events feed the ops queue); the wall shows the\nopening-balance table for today with position-snapshot deltas."
+        "description": "Admin overnight.\n\nthe reconcile queue feed. Mismatches are\ntransient (outbox events feed the ops queue); the wall shows the\nopening-balance table for today with position-snapshot deltas."
       }
     },
     "/v1/admin/policy-sets": {
@@ -161,6 +164,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       }
     },
@@ -191,6 +195,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -221,6 +226,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -251,6 +257,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -292,6 +299,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -339,6 +347,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -370,6 +379,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -416,6 +426,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -446,6 +457,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -482,6 +494,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -513,6 +526,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -569,6 +583,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -596,7 +611,7 @@
           }
         },
         "security": [],
-        "description": "today's trader board (DB rows)."
+        "description": "Admin traders.\n\ntoday's trader board (DB rows)."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -623,7 +638,7 @@
           }
         },
         "security": [],
-        "description": "RFW definitions."
+        "description": "Get admin ui.\n\nRFW definitions."
       }
     },
     "/v1/health": {
@@ -644,7 +659,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the inline health closure (binary has no named fn)."
+        "description": "Pnl health.\n\nSpec wrapper for the inline health closure (binary has no named fn)."
       }
     },
     "/v1/pnl/office": {
@@ -670,6 +685,7 @@
           }
         },
         "security": [],
+        "description": "Office summary.",
         "summary": "`GET /v1/pnl/office`"
       }
     },
@@ -696,6 +712,7 @@
           }
         },
         "security": [],
+        "description": "Self positions.",
         "summary": "`GET /v1/pnl/positions`"
       }
     },
@@ -723,7 +740,7 @@
           }
         },
         "security": [],
-        "description": "Session close (the Cron proxy-back target): persist all\npositions/resumes/summaries + tomorrow's opening balances."
+        "description": "Session close.\n\nSession close (the Cron proxy-back target): persist all\npositions/resumes/summaries + tomorrow's opening balances."
       }
     },
     "/v1/pnl/summary": {
@@ -749,6 +766,7 @@
           }
         },
         "security": [],
+        "description": "Self summary.",
         "summary": "`GET /v1/pnl/summary`"
       }
     },
@@ -776,7 +794,7 @@
           }
         },
         "security": [],
-        "description": "The desk board (manager scope): today's trader summary rows from the\nDB (source of truth - the persist pass)."
+        "description": "Trader board.\n\nThe desk board (manager scope): today's trader summary rows from the\nDB (source of truth - the persist pass)."
       }
     }
   },

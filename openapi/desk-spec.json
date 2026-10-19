@@ -37,6 +37,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -73,6 +74,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -104,6 +106,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -131,7 +134,7 @@
           }
         },
         "security": [],
-        "description": "short pool + category + exempt rows."
+        "description": "Admin borrow.\n\nshort pool + category + exempt rows."
       }
     },
     "/v1/admin/destinations": {
@@ -157,7 +160,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Admin destinations."
       }
     },
     "/v1/admin/markets": {
@@ -183,7 +187,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Admin markets."
       }
     },
     "/v1/admin/offices": {
@@ -209,7 +214,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Admin offices."
       }
     },
     "/v1/admin/orders": {
@@ -236,7 +242,7 @@
           }
         },
         "security": [],
-        "description": "env-wide order rows (admin scope)."
+        "description": "Admin orders.\n\nenv-wide order rows (admin scope)."
       }
     },
     "/v1/admin/overview": {
@@ -263,7 +269,7 @@
           }
         },
         "security": [],
-        "description": "session + counts card."
+        "description": "Admin overview.\n\nsession + counts card."
       }
     },
     "/v1/admin/policy-sets": {
@@ -293,6 +299,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       }
     },
@@ -323,6 +330,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -353,6 +361,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -383,6 +392,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -424,6 +434,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -471,6 +482,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -502,6 +514,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -548,6 +561,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -578,6 +592,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -614,6 +629,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -645,6 +661,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -701,6 +718,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -727,7 +745,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Admin session."
       },
       "post": {
         "tags": [
@@ -752,7 +771,7 @@
           }
         },
         "security": [],
-        "description": "RFW POST-alias for the session action\n(the renderer can't issue raw POST bodies to /v1/session ops)."
+        "description": "Admin session action.\n\nRFW POST-alias for the session action\n(the renderer can't issue raw POST bodies to /v1/session ops)."
       }
     },
     "/v1/admin/symbols": {
@@ -778,7 +797,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Admin symbols."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -805,7 +825,7 @@
           }
         },
         "security": [],
-        "description": "the RFW definitions."
+        "description": "Get admin ui.\n\nthe RFW definitions."
       }
     },
     "/v1/borrow": {
@@ -832,7 +852,7 @@
           }
         },
         "security": [],
-        "description": "Borrow pool read (admin surface): per-symbol availability."
+        "description": "Borrow read.\n\nBorrow pool read (admin surface): per-symbol availability."
       },
       "post": {
         "tags": [
@@ -857,7 +877,7 @@
           }
         },
         "security": [],
-        "description": "Borrow mutation (locate-approval action): pool totals, office\nblocks, ETB/HTB classification, exempt toggles. DB + engine + event."
+        "description": "Borrow mutate.\n\nBorrow mutation (locate-approval action): pool totals, office\nblocks, ETB/HTB classification, exempt toggles. DB + engine + event."
       }
     },
     "/v1/health": {
@@ -878,7 +898,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the inline health closure (binary has no named fn)."
+        "description": "Desk health.\n\nSpec wrapper for the inline health closure (binary has no named fn)."
       }
     },
     "/v1/internal/func-host/orders": {
@@ -905,7 +925,7 @@
           }
         },
         "security": [],
-        "description": "Func proxy-back - `POST /v1/internal/func-host/orders`:\nsubmit on behalf of a strategy module (attribution via\n`on_behalf_of`; the acting user is the strategy's owner)."
+        "description": "Func host submit.\n\nFunc proxy-back - `POST /v1/internal/func-host/orders`:\nsubmit on behalf of a strategy module (attribution via\n`on_behalf_of`; the acting user is the strategy's owner)."
       }
     },
     "/v1/internal/func-host/orders/{id}": {
@@ -932,7 +952,7 @@
           }
         },
         "security": [],
-        "description": "Func proxy-back - `GET /v1/internal/func-host/orders/{id}`."
+        "description": "Func host get.\n\nFunc proxy-back - `GET /v1/internal/func-host/orders/{id}`."
       }
     },
     "/v1/internal/func-host/orders/{id}/cancel": {
@@ -959,7 +979,7 @@
           }
         },
         "security": [],
-        "description": "Func proxy-back - `POST /v1/internal/func-host/orders/{id}/cancel`."
+        "description": "Func host cancel.\n\nFunc proxy-back - `POST /v1/internal/func-host/orders/{id}/cancel`."
       }
     },
     "/v1/orders": {
@@ -986,7 +1006,7 @@
           }
         },
         "security": [],
-        "description": "Blotter read: DB-backed with in-memory fallback when the DB is\nunavailable (degraded-read mode keeps the desk usable)."
+        "description": "List orders.\n\nBlotter read: DB-backed with in-memory fallback when the DB is\nunavailable (degraded-read mode keeps the desk usable)."
       },
       "post": {
         "tags": [
@@ -1011,7 +1031,7 @@
           }
         },
         "security": [],
-        "description": "The Risk-gated submit path: structural validation parks a\nPending order → Risk `authorize` (fail-closed) → accept or reject,\neach persisted with journal + outbox rows in one tx."
+        "description": "Submit order.\n\nThe Risk-gated submit path: structural validation parks a\nPending order → Risk `authorize` (fail-closed) → accept or reject,\neach persisted with journal + outbox rows in one tx."
       }
     },
     "/v1/orders/batch": {
@@ -1038,7 +1058,7 @@
           }
         },
         "security": [],
-        "description": "Basket submission: per-item validation + accept/reject, one\nbatch event. Each accepted item persists independently - a failing\nitem rejects only itself. Every item passes the Risk gate."
+        "description": "Submit batch.\n\nBasket submission: per-item validation + accept/reject, one\nbatch event. Each accepted item persists independently - a failing\nitem rejects only itself. Every item passes the Risk gate."
       }
     },
     "/v1/orders/{id}": {
@@ -1064,6 +1084,7 @@
           }
         },
         "security": [],
+        "description": "Get order.",
         "summary": "`GET /v1/orders/{id}`"
       },
       "delete": {
@@ -1088,6 +1109,7 @@
           }
         },
         "security": [],
+        "description": "Cancel order.",
         "summary": "`DELETE /v1/orders/{id}`"
       }
     },
@@ -1114,6 +1136,7 @@
           }
         },
         "security": [],
+        "description": "Replace order.",
         "summary": "`POST /v1/orders/{id}/replace`"
       }
     },
@@ -1140,6 +1163,7 @@
           }
         },
         "security": [],
+        "description": "Flatten .",
         "summary": "`POST /v1/positions/flatten`"
       }
     },
@@ -1166,6 +1190,7 @@
           }
         },
         "security": [],
+        "description": "Session state.",
         "summary": "`GET /v1/session`"
       },
       "post": {
@@ -1191,7 +1216,7 @@
           }
         },
         "security": [],
-        "description": "Session action (Cron proxy-back + manual ops). Transitions persist a\n`session:state` outbox event; the close transition sweeps day orders\n(cancel) and parks overnight ones - engine + DB in the same handler\n(session FSM); preopen restores parked orders from the DB."
+        "description": "Session action.\n\nSession action (Cron proxy-back + manual ops). Transitions persist a\n`session:state` outbox event; the close transition sweeps day orders\n(cancel) and parks overnight ones - engine + DB in the same handler\n(session FSM); preopen restores parked orders from the DB."
       }
     },
     "/v1/symbols": {
@@ -1217,6 +1242,7 @@
           }
         },
         "security": [],
+        "description": "List symbols.",
         "summary": "`GET /v1/symbols`"
       }
     },
@@ -1244,7 +1270,7 @@
           }
         },
         "security": [],
-        "description": "WS order entry - the bidirectional tier. Same authorization\n(Bearer on the upgrade request) + same submit path as REST; the\nclient replays `idempotency_key` in `client_order_id` so resubmits\nare deduped by the engine (replay-safe)."
+        "description": "Ws entry.\n\nWS order entry - the bidirectional tier. Same authorization\n(Bearer on the upgrade request) + same submit path as REST; the\nclient replays `idempotency_key` in `client_order_id` so resubmits\nare deduped by the engine (replay-safe)."
       }
     }
   },
