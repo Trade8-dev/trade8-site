@@ -30,7 +30,7 @@ custom_edit_url: https://github.com/Trade8-dev/trade8-etrader/edit/main/BUSINESS
 | Blotter | Working/terminal order views, cancel, per-order status |
 | Depth ladder | Live L2 ladder with sizes at each level |
 | Tape / watchlist | Live prints and quotes for watched symbols |
-| Charts | Candlesticks (client-drawn), intervals 1s–1D, MA/EMA/VWAP overlays |
+| Charts | Candlesticks (client-drawn), intervals 1s-1D, MA/EMA/VWAP overlays |
 | P&L board | Per-symbol and total day P&L, LFT giveback |
 | Alerts | Rule creation + fired-alert display with acknowledge |
 | Flatten sheet | Typed flatten strategy parameters + basket progress |
