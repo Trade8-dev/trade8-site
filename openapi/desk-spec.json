@@ -36,7 +36,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -71,7 +72,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -101,7 +103,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/borrow": {
@@ -109,7 +112,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/borrow` — short pool + category + exempt rows.",
+        "summary": "`GET /v1/admin/borrow`",
         "operationId": "admin_borrow",
         "responses": {
           "200": {
@@ -127,7 +130,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "short pool + category + exempt rows."
       }
     },
     "/v1/admin/destinations": {
@@ -213,7 +217,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/orders` — env-wide order rows (admin scope).",
+        "summary": "`GET /v1/admin/orders`",
         "operationId": "admin_orders",
         "responses": {
           "200": {
@@ -231,7 +235,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "env-wide order rows (admin scope)."
       }
     },
     "/v1/admin/overview": {
@@ -239,7 +244,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/overview` — session + counts card.",
+        "summary": "`GET /v1/admin/overview`",
         "operationId": "admin_overview",
         "responses": {
           "200": {
@@ -257,7 +262,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "session + counts card."
       }
     },
     "/v1/admin/policy-sets": {
@@ -286,7 +292,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -315,7 +322,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -344,7 +352,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -373,7 +382,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -413,7 +423,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -459,7 +470,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -489,7 +501,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -534,7 +547,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -563,7 +577,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -598,7 +613,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -628,7 +644,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -683,7 +700,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/session": {
@@ -715,7 +733,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`POST /v1/admin/session` — RFW POST-alias for the session action\n(the renderer can't issue raw POST bodies to /v1/session ops).",
+        "summary": "`POST /v1/admin/session`",
         "operationId": "admin_session_action",
         "responses": {
           "200": {
@@ -733,7 +751,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "RFW POST-alias for the session action\n(the renderer can't issue raw POST bodies to /v1/session ops)."
       }
     },
     "/v1/admin/symbols": {
@@ -767,7 +786,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/ui/{page}` — the RFW definitions.",
+        "summary": "`GET /v1/admin/ui/{page}`",
         "operationId": "get_admin_ui",
         "responses": {
           "200": {
@@ -785,7 +804,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the RFW definitions."
       }
     },
     "/v1/borrow": {
@@ -793,7 +813,7 @@
         "tags": [
           "desk"
         ],
-        "summary": "Borrow pool read (admin surface): per-symbol availability.",
+        "summary": "`GET /v1/borrow`",
         "operationId": "borrow_read",
         "responses": {
           "200": {
@@ -811,13 +831,14 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Borrow pool read (admin surface): per-symbol availability."
       },
       "post": {
         "tags": [
           "desk"
         ],
-        "summary": "Borrow mutation (locate-approval action): pool totals, office\nblocks, ETB/HTB classification, exempt toggles. DB + engine + event.",
+        "summary": "`POST /v1/borrow`",
         "operationId": "borrow_mutate",
         "responses": {
           "200": {
@@ -835,7 +856,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Borrow mutation (locate-approval action): pool totals, office\nblocks, ETB/HTB classification, exempt toggles. DB + engine + event."
       }
     },
     "/v1/health": {
@@ -843,7 +865,7 @@
         "tags": [
           "desk"
         ],
-        "summary": "Spec wrapper for the inline health closure (binary has no named fn).",
+        "summary": "`GET /v1/health`",
         "operationId": "desk_health",
         "responses": {
           "200": {
@@ -855,7 +877,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the inline health closure (binary has no named fn)."
       }
     },
     "/v1/internal/func-host/orders": {
@@ -863,7 +886,7 @@
         "tags": [
           "desk-internal"
         ],
-        "summary": "Func proxy-back — `POST /v1/internal/func-host/orders`:\nsubmit on behalf of a strategy module (attribution via\n`on_behalf_of`; the acting user is the strategy's owner).",
+        "summary": "`POST /v1/internal/func-host/orders`",
         "operationId": "func_host_submit",
         "responses": {
           "200": {
@@ -881,7 +904,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Func proxy-back - `POST /v1/internal/func-host/orders`:\nsubmit on behalf of a strategy module (attribution via\n`on_behalf_of`; the acting user is the strategy's owner)."
       }
     },
     "/v1/internal/func-host/orders/{id}": {
@@ -889,7 +913,7 @@
         "tags": [
           "desk-internal"
         ],
-        "summary": "Func proxy-back — `GET /v1/internal/func-host/orders/{id}`.",
+        "summary": "`GET /v1/internal/func-host/orders/{id}`",
         "operationId": "func_host_get",
         "responses": {
           "200": {
@@ -907,7 +931,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Func proxy-back - `GET /v1/internal/func-host/orders/{id}`."
       }
     },
     "/v1/internal/func-host/orders/{id}/cancel": {
@@ -915,7 +940,7 @@
         "tags": [
           "desk"
         ],
-        "summary": "Func proxy-back — `POST /v1/internal/func-host/orders/{id}/cancel`.",
+        "summary": "`POST /v1/internal/func-host/orders/{id}/cancel`",
         "operationId": "func_host_cancel",
         "responses": {
           "200": {
@@ -933,7 +958,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Func proxy-back - `POST /v1/internal/func-host/orders/{id}/cancel`."
       }
     },
     "/v1/orders": {
@@ -941,7 +967,7 @@
         "tags": [
           "desk"
         ],
-        "summary": "Blotter read: DB-backed with in-memory fallback when the DB is\nunavailable (degraded-read mode keeps the desk usable).",
+        "summary": "`GET /v1/orders`",
         "operationId": "list_orders",
         "responses": {
           "200": {
@@ -959,13 +985,14 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Blotter read: DB-backed with in-memory fallback when the DB is\nunavailable (degraded-read mode keeps the desk usable)."
       },
       "post": {
         "tags": [
           "desk"
         ],
-        "summary": "The Risk-gated submit path: structural validation parks a\nPending order → Risk `authorize` (fail-closed) → accept or reject,\neach persisted with journal + outbox rows in one tx.",
+        "summary": "`POST /v1/orders`",
         "operationId": "submit_order",
         "responses": {
           "200": {
@@ -983,7 +1010,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "The Risk-gated submit path: structural validation parks a\nPending order → Risk `authorize` (fail-closed) → accept or reject,\neach persisted with journal + outbox rows in one tx."
       }
     },
     "/v1/orders/batch": {
@@ -991,7 +1019,7 @@
         "tags": [
           "desk"
         ],
-        "summary": "Basket submission: per-item validation + accept/reject, one\nbatch event. Each accepted item persists independently — a failing\nitem rejects only itself. Every item passes the Risk gate.",
+        "summary": "`POST /v1/orders/batch`",
         "operationId": "submit_batch",
         "responses": {
           "200": {
@@ -1009,7 +1037,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Basket submission: per-item validation + accept/reject, one\nbatch event. Each accepted item persists independently - a failing\nitem rejects only itself. Every item passes the Risk gate."
       }
     },
     "/v1/orders/{id}": {
@@ -1034,7 +1063,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/orders/{id}`"
       },
       "delete": {
         "tags": [
@@ -1057,7 +1087,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`DELETE /v1/orders/{id}`"
       }
     },
     "/v1/orders/{id}/replace": {
@@ -1082,7 +1113,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`POST /v1/orders/{id}/replace`"
       }
     },
     "/v1/positions/flatten": {
@@ -1107,7 +1139,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`POST /v1/positions/flatten`"
       }
     },
     "/v1/session": {
@@ -1132,13 +1165,14 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/session`"
       },
       "post": {
         "tags": [
           "desk"
         ],
-        "summary": "Session action (Cron proxy-back + manual ops). Transitions persist a\n`session:state` outbox event; the close transition sweeps day orders\n(cancel) and parks overnight ones — engine + DB in the same handler\n(session FSM); preopen restores parked orders from the DB.",
+        "summary": "`POST /v1/session`",
         "operationId": "session_action",
         "responses": {
           "200": {
@@ -1156,7 +1190,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Session action (Cron proxy-back + manual ops). Transitions persist a\n`session:state` outbox event; the close transition sweeps day orders\n(cancel) and parks overnight ones - engine + DB in the same handler\n(session FSM); preopen restores parked orders from the DB."
       }
     },
     "/v1/symbols": {
@@ -1181,7 +1216,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/symbols`"
       }
     },
     "/ws": {
@@ -1189,7 +1225,7 @@
         "tags": [
           "desk"
         ],
-        "summary": "WS order entry — the bidirectional tier. Same authorization\n(Bearer on the upgrade request) + same submit path as REST; the\nclient replays `idempotency_key` in `client_order_id` so resubmits\nare deduped by the engine (replay-safe).",
+        "summary": "`GET /ws`",
         "operationId": "ws_entry",
         "responses": {
           "200": {
@@ -1207,7 +1243,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "WS order entry - the bidirectional tier. Same authorization\n(Bearer on the upgrade request) + same submit path as REST; the\nclient replays `idempotency_key` in `client_order_id` so resubmits\nare deduped by the engine (replay-safe)."
       }
     }
   },
@@ -1216,7 +1253,7 @@
   "tags": [
     {
       "name": "desk",
-      "description": "Trade8:Desk — order management"
+      "description": "Trade8:Desk - order management"
     },
     {
       "name": "trade8-admin",

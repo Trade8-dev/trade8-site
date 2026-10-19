@@ -15,7 +15,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for `admin_alerts`.",
+        "summary": "`GET /v1/admin/alerts`",
         "operationId": "admin_alerts",
         "responses": {
           "200": {
@@ -30,7 +30,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `admin_alerts`."
       }
     },
     "/v1/admin/alerts/{id}/ack": {
@@ -38,7 +39,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for `admin_ack_alert` (GET probe).",
+        "summary": "`GET /v1/admin/alerts/{id}/ack`",
         "operationId": "admin_ack_alert",
         "responses": {
           "200": {
@@ -53,13 +54,14 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `admin_ack_alert` (GET probe)."
       },
       "post": {
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for the POST binding of `admin_ack_alert` — utoipa\nallows one served path per annotated fn, so the second binding gets\nits own.",
+        "summary": "`POST /v1/admin/alerts/{id}/ack`",
         "operationId": "admin_ack_alert_post",
         "responses": {
           "200": {
@@ -74,7 +76,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the POST binding of `admin_ack_alert` - utoipa\nallows one served path per annotated fn, so the second binding gets\nits own."
       }
     },
     "/v1/admin/attributes": {
@@ -103,7 +106,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -138,7 +142,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -168,7 +173,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/feeds": {
@@ -176,7 +182,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for `admin_feeds`.",
+        "summary": "`GET /v1/admin/feeds`",
         "operationId": "admin_feeds",
         "responses": {
           "200": {
@@ -191,7 +197,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `admin_feeds`."
       }
     },
     "/v1/admin/policy-sets": {
@@ -220,7 +227,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -249,7 +257,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -278,7 +287,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -307,7 +317,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -347,7 +358,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -393,7 +405,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -423,7 +436,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -468,7 +482,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -497,7 +512,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -532,7 +548,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -562,7 +579,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -617,7 +635,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/sources": {
@@ -625,7 +644,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for `admin_sources`.",
+        "summary": "`GET /v1/admin/sources`",
         "operationId": "admin_sources",
         "responses": {
           "200": {
@@ -640,7 +659,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `admin_sources`."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -648,7 +668,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for `get_admin_ui`.",
+        "summary": "`GET /v1/admin/ui/{page}`",
         "operationId": "get_admin_ui",
         "responses": {
           "200": {
@@ -663,7 +683,8 @@
             "description": "Unknown page"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `get_admin_ui`."
       }
     },
     "/v1/alerts": {
@@ -671,7 +692,7 @@
         "tags": [
           "feed"
         ],
-        "summary": "Spec wrapper for `list_alerts`.",
+        "summary": "`GET /v1/alerts`",
         "operationId": "list_alerts",
         "responses": {
           "200": {
@@ -686,13 +707,14 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `list_alerts`."
       },
       "post": {
         "tags": [
           "feed"
         ],
-        "summary": "Spec wrapper for `create_alert`.",
+        "summary": "`POST /v1/alerts`",
         "operationId": "create_alert",
         "responses": {
           "200": {
@@ -707,7 +729,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `create_alert`."
       }
     },
     "/v1/depth/{symbol}": {
@@ -715,7 +738,7 @@
         "tags": [
           "feed"
         ],
-        "summary": "Spec wrapper for `depth`.",
+        "summary": "`GET /v1/depth/{symbol}`",
         "operationId": "depth",
         "responses": {
           "200": {
@@ -730,7 +753,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `depth`."
       }
     },
     "/v1/feeds": {
@@ -738,7 +762,7 @@
         "tags": [
           "feed"
         ],
-        "summary": "Spec wrapper for `list_feeds`.",
+        "summary": "`GET /v1/feeds`",
         "operationId": "list_feeds",
         "responses": {
           "200": {
@@ -753,7 +777,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `list_feeds`."
       }
     },
     "/v1/health": {
@@ -761,7 +786,7 @@
         "tags": [
           "feed"
         ],
-        "summary": "Spec wrapper for the inline health closure.",
+        "summary": "`GET /v1/health`",
         "operationId": "health",
         "responses": {
           "200": {
@@ -773,7 +798,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the inline health closure."
       }
     },
     "/v1/quotes/{symbol}": {
@@ -781,7 +807,7 @@
         "tags": [
           "feed"
         ],
-        "summary": "Spec wrapper for `quote`.",
+        "summary": "`GET /v1/quotes/{symbol}`",
         "operationId": "quote",
         "responses": {
           "200": {
@@ -796,7 +822,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `quote`."
       }
     },
     "/v1/stream/{symbol}": {
@@ -804,7 +831,7 @@
         "tags": [
           "feed"
         ],
-        "summary": "Spec wrapper for `sse_symbol`.",
+        "summary": "`GET /v1/stream/{symbol}`",
         "operationId": "sse_symbol",
         "responses": {
           "200": {
@@ -819,7 +846,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `sse_symbol`."
       }
     }
   },
@@ -828,7 +856,7 @@
   "tags": [
     {
       "name": "feed",
-      "description": "Trade8:Feed — market data + alerts"
+      "description": "Trade8:Feed - market data + alerts"
     },
     {
       "name": "trade8-admin",

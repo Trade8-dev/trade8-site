@@ -36,7 +36,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -71,7 +72,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -101,7 +103,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/overnight": {
@@ -109,7 +112,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/overnight` — the reconcile queue feed. Mismatches are\ntransient (outbox events feed the ops queue); the wall shows the\nopening-balance table for today with position-snapshot deltas.",
+        "summary": "`GET /v1/admin/overnight`",
         "operationId": "admin_overnight",
         "responses": {
           "200": {
@@ -127,7 +130,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the reconcile queue feed. Mismatches are\ntransient (outbox events feed the ops queue); the wall shows the\nopening-balance table for today with position-snapshot deltas."
       }
     },
     "/v1/admin/policy-sets": {
@@ -156,7 +160,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -185,7 +190,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -214,7 +220,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -243,7 +250,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -283,7 +291,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -329,7 +338,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -359,7 +369,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -404,7 +415,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -433,7 +445,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -468,7 +481,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -498,7 +512,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -553,7 +568,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/traders": {
@@ -561,7 +577,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/traders` — today's trader board (DB rows).",
+        "summary": "`GET /v1/admin/traders`",
         "operationId": "admin_traders",
         "responses": {
           "200": {
@@ -579,7 +595,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "today's trader board (DB rows)."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -587,7 +604,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/ui/{page}` — RFW definitions.",
+        "summary": "`GET /v1/admin/ui/{page}`",
         "operationId": "get_admin_ui",
         "responses": {
           "200": {
@@ -605,7 +622,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "RFW definitions."
       }
     },
     "/v1/health": {
@@ -613,7 +631,7 @@
         "tags": [
           "pnl"
         ],
-        "summary": "Spec wrapper for the inline health closure (binary has no named fn).",
+        "summary": "`GET /v1/health`",
         "operationId": "pnl_health",
         "responses": {
           "200": {
@@ -625,7 +643,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the inline health closure (binary has no named fn)."
       }
     },
     "/v1/pnl/office": {
@@ -650,7 +669,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/pnl/office`"
       }
     },
     "/v1/pnl/positions": {
@@ -675,7 +695,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/pnl/positions`"
       }
     },
     "/v1/pnl/session-close": {
@@ -683,7 +704,7 @@
         "tags": [
           "pnl"
         ],
-        "summary": "Session close (the Cron proxy-back target): persist all\npositions/resumes/summaries + tomorrow's opening balances.",
+        "summary": "`POST /v1/pnl/session-close`",
         "operationId": "session_close",
         "responses": {
           "200": {
@@ -701,7 +722,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Session close (the Cron proxy-back target): persist all\npositions/resumes/summaries + tomorrow's opening balances."
       }
     },
     "/v1/pnl/summary": {
@@ -726,7 +748,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/pnl/summary`"
       }
     },
     "/v1/pnl/traders": {
@@ -734,7 +757,7 @@
         "tags": [
           "pnl"
         ],
-        "summary": "The desk board (manager scope): today's trader summary rows from the\nDB (source of truth — the persist pass).",
+        "summary": "`GET /v1/pnl/traders`",
         "operationId": "trader_board",
         "responses": {
           "200": {
@@ -752,7 +775,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "The desk board (manager scope): today's trader summary rows from the\nDB (source of truth - the persist pass)."
       }
     }
   },
@@ -761,7 +785,7 @@
   "tags": [
     {
       "name": "pnl",
-      "description": "Trade8:PnL — profit & loss"
+      "description": "Trade8:PnL - profit & loss"
     },
     {
       "name": "trade8-admin",

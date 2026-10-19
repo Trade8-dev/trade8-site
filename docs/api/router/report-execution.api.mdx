@@ -1,17 +1,11 @@
 ---
 id: report-execution
-title: "Inbound execution callback (gateway adapter /
-OUCH shard proxy-back): a normalized Fill + preserved FIX tags. The
-fill persists `order_transaction` + `fill_fix_tags` + the fill outbox
-event in one tx; idempotent on transaction_id (redelivery → no-op)."
+title: "`POST /v1/internal/executions/{destination}`"
 description: "Inbound execution callback (gateway adapter /"
-sidebar_label: "Inbound execution callback (gateway adapter /
-OUCH shard proxy-back): a normalized Fill + preserved FIX tags. The
-fill persists `order_transaction` + `fill_fix_tags` + the fill outbox
-event in one tx; idempotent on transaction_id (redelivery → no-op)."
+sidebar_label: "`POST /v1/internal/executions/{destination}`"
 hide_title: true
 hide_table_of_contents: true
-api: eJztVNtuEzEQ/ZXRPLXq5lZ4qJanCqkiQhBEWwkpjVLHnnRNHduMvUvCal/5AD6RL0GzKSW0fAJPK82cOR6fc9YtZnWXsJwjhzoTD6zPxF45XBQYIrHKNvipwRKZYuC8pC3pWopYIFOKwSdKWLZ4Oh7Lx1DSbGOPKHH2FgvUwWfyWboqRmd1Tzr6nATSYtIVbRSWbdd1XYEvx5PnPO9DBlXninyWcTLYI188R14EXlljyKOQJdI127zDcr4oniCnfhVqb+DxRqCVcyul7+HoTmX6qnagjIqZGEY3fnb9+g2kSrGByGG7GwjyuAQFPvBGOfuNDFxY5+AEIlMibqQw/QQi8RCuKrrxa+lH4mRTTnAb2BAvMyuflJYVbuEEbgW0XNvtUgalkiuCfjLUeRW2N54a8hmsh+AJ8vYVWEObGERlCB4OCJfWwBGTIWcb4h38/P4DfBiEeDzEAjeUqyDmxpAyFhhVrrDEUTMZ/Q7C6FGeNGoNpWx9b1+HBVq/DuJAttkRlphZGTob7KOET/W+FPP8GexRsEeB6GQ1yTbOavKJhNGrjRC+m17B7COcR6UrGpwOx3KoEZ61Jf4noCuwEX37I8fDyb4k99sof0D93/2/7Wkx72JvIm3zKDplvQhXs5PePhhzbCa97Q9vRIF/woEFlgfxkPejklCVc2zblUp0za7rpPylJn74IRvFVq0kO/NFV2BFyoit8xbvaYclnmtNUYLZKFfLcs/ej25xkOIPs8sr7LpfHUuxNA==
+api: eJztlMFuEzEQhl9lNKdW3WSTwqFaThVSRYQgiLZSpTRKnPWka+rYxp5dElZ75QF4RJ4Ezaa0UcuBB+C00vj3b88/37pFVncJixlGXzPFgXFM0SmL8wx9oKjYeDfRWGCk4CMvaEtlLUXMMFIK3iVKWLR4OhrJR1Mqowm9osDpe8yw9I7JsayqEKwpe9P8SxJJi6msaKOwaLuu6zJ8PRq/9PnoGVTNFTmW7aSxV756qbzwcWW0Jodilqiso+EdFrN59kw5cStfOw2PHUGprF2p8h6O7hTTN7UDpVVgipDfuun123eQKhU1hOi3u4EojwtQ4HzcKGu+k4YLYy2cQIiUKDZSmNyARDyEq4pu3VrWA8VkEidY+qgpLjgql1QpV1jCCSxFtFib7UI2SoUrgn6nr3nlt7eOGnIMxoF3BLx9A0bTJnhJGbyDA8OF0XAUSZM1DcUd/PrxE5wf+HA8xAw3xJWX4QafGDMMiissMG/G+R8Q8sd4Ut5qSmxcP74OMzRu7WUCbNgSFshRaTob7FHC53lfyvDcGexVsFeB5GRKkttYU5JLJI5ObcTww+QKpp/hPKiyosHpcCSHavFZG4p/FXQZNpJvf+RoON6XpL+NcgfWy0/Tyyv4p06Xz1tpn5D+T1GGvAv99GnLebDKOEm8jlaC2hM1w2bc8/LwuGT4lDVmWBykLQ9PJTQWM2zblUp0HW3XSflrTfHhT25UNGol0M3mXYYVKS08zFq8px0WeF6WFIToRtlaLvfi4enmB/gLC9h1vwEK7MXk
 sidebar_class_name: "post api-method"
 info_path: docs/api/router/trade-8-router
 custom_edit_url: null
@@ -29,7 +23,7 @@ import Translate from "@docusaurus/Translate";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Inbound execution callback (gateway adapter /\nOUCH shard proxy-back): a normalized Fill + preserved FIX tags. The\nfill persists `order_transaction` + `fill_fix_tags` + the fill outbox\nevent in one tx; idempotent on transaction_id (redelivery → no-op)."}
+  children={"`POST /v1/internal/executions/{destination}`"}
 >
 </Heading>
 

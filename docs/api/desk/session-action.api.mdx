@@ -1,17 +1,11 @@
 ---
 id: session-action
-title: "Session action (Cron proxy-back + manual ops). Transitions persist a
-`session:state` outbox event; the close transition sweeps day orders
-(cancel) and parks overnight ones — engine + DB in the same handler
-(session FSM); preopen restores parked orders from the DB."
+title: "`POST /v1/session`"
 description: "Session action (Cron proxy-back + manual ops). Transitions persist a"
-sidebar_label: "Session action (Cron proxy-back + manual ops). Transitions persist a
-`session:state` outbox event; the close transition sweeps day orders
-(cancel) and parks overnight ones — engine + DB in the same handler
-(session FSM); preopen restores parked orders from the DB."
+sidebar_label: "`POST /v1/session`"
 hide_title: true
 hide_table_of_contents: true
-api: eJztVNtO3DAQ/ZXRPIEIe6F9QOEJipBQRakKfVpWZdYeiLvJ2PV4U1ZRJD6iX9gvqZzdVtDtJ/Qp0vj4HM+ck+kw0aNiOUPLusR5gT5wpOS8XFosUVnVeflCJpewwMgavCgrlh0eTSb5Y1lNdGFAlHj9Hgs0XhJLyqcUQu3MQDn+qhnSoZqKG8Ky6/u+L/DtZLrL88EnoFWqWFK+zhYH5Jtd5IWPC2ctC2YyZbOKLq2xnM2Lv5A3m3Zg0w7svYteIET/tD5ckFnCATQkK6rBB90fwW0kUZehCoGjOk1Ad3K/nUqpiRLfg1+lhX8CblnSCaSKwdReGdKf66DfmYOCpTX4aDnqnewZEsP1PpBYCBSXCr7lKO6xSuCFFX4+/wCWRycMB3B+Bk4GcqWGoSKxNcc72ds+Bi5urvZPIET2gQUia/KRdWBmu1WFh+ibgeT8bIQFNpwqn30OXhMWGChVWOK4nY63tFigkwefh55cqhlLTJEsHx8OgdkdsCQnx7DBQMaAcmyd4axXO8OinNmEmkx2dXkL15/gNJCp+PBoNMmCNrM8OI7/BPQFttmMQXAymm5KuYOG5AX1f7Nfm/3KqQ7TOgxu8lMah5qc5CmuYp3PNjmYYTvF4vcOyMuhyjEpZ9h1C1L+HOu+z+VvK47b/62l6GiRczKb9wVWTDbbOOtwyWss8dQYDjlqLdWrrL+zHvr5i1x+vL65xb7/BQ2ynhQ=
+api: eJztlM9u2zAMxl+F4KlFnX/dDoV7alcUKIauw9qd0mBhJLbWYlOaqHgNDL/7ICfbumWPsJMB+tOPIvmJHSZ6ViznaFnXuCjQB46UnJcbiyUqqzovX8jkEBYYWYMXZcWyw9PpNH8sq4kuDIoS795jgcZLYkn5L4VQOzMgJ181SzpUU3FDWHZ93/cFvp3ODjkffALapIol5eNscVC+OVRe+7hy1rJghimbTXRpi+V8UfylvN+VA7ty4Ohd9AIh+pftaEVmDSfQkGyoBh/0eAwPkURdlioEjuo0AT3Kct+VUhMlXoLfpJV/AW5Z0jmkisHUXhnSr+Og35mDgqUt+Gg56qMcGRLD9TGQWAgU1wq+5SjuuUrghRVGwPLshOEEri7ByYBWahgqEltzfJSj/VXg+v72+BxCZB9YILImH1kHLtt9TniKvhkgV5djLLDhVPk85eA1YYGBUoUlTtrZZI/FAp08+dzy5FLNWGKKZPlsNNjlsL2SnJzBTgNZA8qxdYZzvtoZFuVME2oy7PbmAe4+wUUgU/HodDzNCW2mPDmO/xT0BbZ5FEPC6Xi2C+UKGpJX6OXHu/sHeFXL8u/rdr9d+t8YfxgjbcMwan5Jk1CTk9ziTaxzz3YmmWM7w+Lnesh7o8oeKufYdStS/hzrvs/hbxuO+6fYUnS0yiaaL/oCKyabZzzvcM1bLPHCGA7Zhy3Vm5z/YHP0i1emzfPFvv8BNV6kmg==
 sidebar_class_name: "post api-method"
 info_path: docs/api/desk/trade-8-desk
 custom_edit_url: null
@@ -29,7 +23,7 @@ import Translate from "@docusaurus/Translate";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Session action (Cron proxy-back + manual ops). Transitions persist a\n`session:state` outbox event; the close transition sweeps day orders\n(cancel) and parks overnight ones — engine + DB in the same handler\n(session FSM); preopen restores parked orders from the DB."}
+  children={"`POST /v1/session`"}
 >
 </Heading>
 
@@ -45,7 +39,7 @@ import Translate from "@docusaurus/Translate";
 
 Session action (Cron proxy-back + manual ops). Transitions persist a
 `session:state` outbox event; the close transition sweeps day orders
-(cancel) and parks overnight ones — engine + DB in the same handler
+(cancel) and parks overnight ones - engine + DB in the same handler
 (session FSM); preopen restores parked orders from the DB.
 
 <ParamsDetails>

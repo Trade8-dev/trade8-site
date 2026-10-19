@@ -36,7 +36,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -71,7 +72,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -101,7 +103,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/fees": {
@@ -109,7 +112,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/fees` — charger formula table (engine copy).",
+        "summary": "`GET /v1/admin/fees`",
         "operationId": "admin_fees",
         "responses": {
           "200": {
@@ -127,7 +130,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "charger formula table (engine copy)."
       }
     },
     "/v1/admin/journal": {
@@ -135,7 +139,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/journal` — journal window (latest N frames, hex preview).",
+        "summary": "`GET /v1/admin/journal`",
         "operationId": "admin_journal",
         "responses": {
           "200": {
@@ -153,7 +157,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "journal window (latest N frames, hex preview)."
       }
     },
     "/v1/admin/policy-sets": {
@@ -182,7 +187,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -211,7 +217,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -240,7 +247,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -269,7 +277,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -309,7 +318,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -355,7 +365,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -385,7 +396,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -430,7 +442,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -459,7 +472,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -494,7 +508,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -524,7 +539,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -579,7 +595,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/sessions": {
@@ -587,7 +604,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/sessions` — session rows from the DB.",
+        "summary": "`GET /v1/admin/sessions`",
         "operationId": "admin_sessions",
         "responses": {
           "200": {
@@ -605,7 +622,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "session rows from the DB."
       }
     },
     "/v1/admin/sessions/{id}/reset": {
@@ -613,7 +631,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`POST /v1/admin/sessions/{id}/reset` — RFW POST-alias reset.",
+        "summary": "`POST /v1/admin/sessions/{id}/reset`",
         "operationId": "admin_reset_session",
         "responses": {
           "200": {
@@ -631,7 +649,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "RFW POST-alias reset."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -639,7 +658,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "`GET /v1/admin/ui/{page}` — RFW definitions.",
+        "summary": "`GET /v1/admin/ui/{page}`",
         "operationId": "get_admin_ui",
         "responses": {
           "200": {
@@ -657,7 +676,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "RFW definitions."
       }
     },
     "/v1/health": {
@@ -665,7 +685,7 @@
         "tags": [
           "router"
         ],
-        "summary": "Spec wrapper for the inline health closure (binary has no named fn).",
+        "summary": "`GET /v1/health`",
         "operationId": "router_health",
         "responses": {
           "200": {
@@ -677,7 +697,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the inline health closure (binary has no named fn)."
       }
     },
     "/v1/internal/executions/{destination}": {
@@ -685,7 +706,7 @@
         "tags": [
           "router-internal"
         ],
-        "summary": "Inbound execution callback (gateway adapter /\nOUCH shard proxy-back): a normalized Fill + preserved FIX tags. The\nfill persists `order_transaction` + `fill_fix_tags` + the fill outbox\nevent in one tx; idempotent on transaction_id (redelivery → no-op).",
+        "summary": "`POST /v1/internal/executions/{destination}`",
         "operationId": "report_execution",
         "responses": {
           "200": {
@@ -703,7 +724,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Inbound execution callback (gateway adapter /\nOUCH shard proxy-back): a normalized Fill + preserved FIX tags. The\nfill persists `order_transaction` + `fill_fix_tags` + the fill outbox\nevent in one tx; idempotent on transaction_id (redelivery → no-op)."
       }
     },
     "/v1/journal/purge": {
@@ -711,7 +733,7 @@
         "tags": [
           "router"
         ],
-        "summary": "Retention purge — the Cron proxy-back target. Default 30 days.",
+        "summary": "`POST /v1/journal/purge`",
         "operationId": "purge_old",
         "responses": {
           "200": {
@@ -729,7 +751,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Retention purge - the Cron proxy-back target. Default 30 days."
       }
     },
     "/v1/messages": {
@@ -737,7 +760,7 @@
         "tags": [
           "router"
         ],
-        "summary": "Journal read: DB window + engine tail fallback.",
+        "summary": "`GET /v1/messages`",
         "operationId": "list_messages",
         "responses": {
           "200": {
@@ -755,7 +778,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Journal read: DB window + engine tail fallback."
       }
     },
     "/v1/sessions": {
@@ -780,7 +804,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/sessions`"
       }
     },
     "/v1/sessions/{id}/reset": {
@@ -805,7 +830,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`POST /v1/sessions/{id}/reset`"
       }
     }
   },
@@ -814,7 +840,7 @@
   "tags": [
     {
       "name": "router",
-      "description": "Trade8:Router — execution routing"
+      "description": "Trade8:Router - execution routing"
     },
     {
       "name": "trade8-admin",

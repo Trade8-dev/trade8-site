@@ -36,7 +36,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -71,7 +72,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -101,7 +103,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/coverage": {
@@ -109,7 +112,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for `admin_coverage`.",
+        "summary": "`GET /v1/admin/coverage`",
         "operationId": "admin_coverage",
         "responses": {
           "200": {
@@ -124,7 +127,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `admin_coverage`."
       }
     },
     "/v1/admin/eod": {
@@ -132,7 +136,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for `admin_eod`.",
+        "summary": "`GET /v1/admin/eod`",
         "operationId": "admin_eod",
         "responses": {
           "200": {
@@ -147,7 +151,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `admin_eod`."
       }
     },
     "/v1/admin/policy-sets": {
@@ -176,7 +181,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -205,7 +211,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -234,7 +241,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -263,7 +271,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -303,7 +312,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -349,7 +359,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -379,7 +390,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -424,7 +436,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -453,7 +466,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -488,7 +502,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -518,7 +533,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -573,7 +589,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/ui/{page}": {
@@ -581,7 +598,7 @@
         "tags": [
           "trade8-admin"
         ],
-        "summary": "Spec wrapper for `get_admin_ui`.",
+        "summary": "`GET /v1/admin/ui/{page}`",
         "operationId": "get_admin_ui",
         "parameters": [
           {
@@ -607,7 +624,8 @@
             "description": "Unknown page"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `get_admin_ui`."
       }
     },
     "/v1/bars": {
@@ -615,7 +633,7 @@
         "tags": [
           "bars"
         ],
-        "summary": "Spec wrapper for `query_bars` (routed handler keeps its impl).",
+        "summary": "`GET /v1/bars`",
         "operationId": "query_bars",
         "responses": {
           "200": {
@@ -630,7 +648,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `query_bars` (routed handler keeps its impl)."
       }
     },
     "/v1/bars/latest": {
@@ -638,7 +657,7 @@
         "tags": [
           "bars"
         ],
-        "summary": "Spec wrapper for `latest_bars`.",
+        "summary": "`GET /v1/bars/latest`",
         "operationId": "latest_bars",
         "responses": {
           "200": {
@@ -653,7 +672,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `latest_bars`."
       }
     },
     "/v1/eod": {
@@ -661,7 +681,7 @@
         "tags": [
           "bars"
         ],
-        "summary": "Spec wrapper for `list_eod`.",
+        "summary": "`GET /v1/eod`",
         "operationId": "list_eod",
         "responses": {
           "200": {
@@ -676,13 +696,14 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `list_eod`."
       },
       "post": {
         "tags": [
           "bars"
         ],
-        "summary": "Spec wrapper for `finalize_eod`.",
+        "summary": "`POST /v1/eod`",
         "operationId": "finalize_eod",
         "requestBody": {
           "content": {
@@ -705,7 +726,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for `finalize_eod`."
       }
     },
     "/v1/health": {
@@ -713,7 +735,7 @@
         "tags": [
           "bars"
         ],
-        "summary": "Spec wrapper for the inline health closure.",
+        "summary": "`GET /v1/health`",
         "operationId": "health",
         "responses": {
           "200": {
@@ -725,7 +747,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the inline health closure."
       }
     }
   },
@@ -734,7 +757,7 @@
   "tags": [
     {
       "name": "bars",
-      "description": "Trade8:Bars — OHLC bar buckets"
+      "description": "Trade8:Bars - OHLC bar buckets"
     },
     {
       "name": "trade8-admin",
