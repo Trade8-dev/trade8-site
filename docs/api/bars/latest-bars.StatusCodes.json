@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Latest bucket per series","content":{"application/json":{"schema":{}}}},"403":{"description":"Forbidden"}}}

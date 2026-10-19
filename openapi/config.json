@@ -1,0 +1,50 @@
+{
+  "desk": {
+    "specPath": "openapi/desk-spec.json",
+    "outputDir": "docs/api/desk",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "router": {
+    "specPath": "openapi/router-spec.json",
+    "outputDir": "docs/api/router",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "risk": {
+    "specPath": "openapi/risk-spec.json",
+    "outputDir": "docs/api/risk",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "feed": {
+    "specPath": "openapi/feed-spec.json",
+    "outputDir": "docs/api/feed",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "bars": {
+    "specPath": "openapi/bars-spec.json",
+    "outputDir": "docs/api/bars",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "pnl": {
+    "specPath": "openapi/pnl-spec.json",
+    "outputDir": "docs/api/pnl",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  }
+}

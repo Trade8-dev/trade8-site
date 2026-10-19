@@ -1,0 +1,68 @@
+---
+id: session-action
+title: "Session action (Cron proxy-back + manual ops). Transitions persist a
+`session:state` outbox event; the close transition sweeps day orders
+(cancel) and parks overnight ones — engine + DB in the same handler
+(session FSM); preopen restores parked orders from the DB."
+description: "Session action (Cron proxy-back + manual ops). Transitions persist a"
+sidebar_label: "Session action (Cron proxy-back + manual ops). Transitions persist a
+`session:state` outbox event; the close transition sweeps day orders
+(cancel) and parks overnight ones — engine + DB in the same handler
+(session FSM); preopen restores parked orders from the DB."
+hide_title: true
+hide_table_of_contents: true
+api: eJztVNtO3DAQ/ZXRPIEIe6F9QOEJipBQRakKfVpWZdYeiLvJ2PV4U1ZRJD6iX9gvqZzdVtDtJ/Qp0vj4HM+ck+kw0aNiOUPLusR5gT5wpOS8XFosUVnVeflCJpewwMgavCgrlh0eTSb5Y1lNdGFAlHj9Hgs0XhJLyqcUQu3MQDn+qhnSoZqKG8Ky6/u+L/DtZLrL88EnoFWqWFK+zhYH5Jtd5IWPC2ctC2YyZbOKLq2xnM2Lv5A3m3Zg0w7svYteIET/tD5ckFnCATQkK6rBB90fwW0kUZehCoGjOk1Ad3K/nUqpiRLfg1+lhX8CblnSCaSKwdReGdKf66DfmYOCpTX4aDnqnewZEsP1PpBYCBSXCr7lKO6xSuCFFX4+/wCWRycMB3B+Bk4GcqWGoSKxNcc72ds+Bi5urvZPIET2gQUia/KRdWBmu1WFh+ibgeT8bIQFNpwqn30OXhMWGChVWOK4nY63tFigkwefh55cqhlLTJEsHx8OgdkdsCQnx7DBQMaAcmyd4axXO8OinNmEmkx2dXkL15/gNJCp+PBoNMmCNrM8OI7/BPQFttmMQXAymm5KuYOG5AX1f7Nfm/3KqQ7TOgxu8lMah5qc5CmuYp3PNjmYYTvF4vcOyMuhyjEpZ9h1C1L+HOu+z+VvK47b/62l6GiRczKb9wVWTDbbOOtwyWss8dQYDjlqLdWrrL+zHvr5i1x+vL65xb7/BQ2ynhQ=
+sidebar_class_name: "post api-method"
+info_path: docs/api/desk/trade-8-desk
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Session action (Cron proxy-back + manual ops). Transitions persist a\n`session:state` outbox event; the close transition sweeps day orders\n(cancel) and parks overnight ones — engine + DB in the same handler\n(session FSM); preopen restores parked orders from the DB."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/session"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Session action (Cron proxy-back + manual ops). Transitions persist a
+`session:state` outbox event; the close transition sweeps day orders
+(cancel) and parks overnight ones — engine + DB in the same handler
+(session FSM); preopen restores parked orders from the DB.
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./session-action.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./session-action.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      
