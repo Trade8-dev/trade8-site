@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","description":"Ack envelope.","required":["status"],"properties":{"status":{"type":"string","description":"The action status (e.g. `ok`, `acked`)."}},"title":"AckResponse"}}}},"403":{"description":"Forbidden"}}}

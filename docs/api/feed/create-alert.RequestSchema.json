@@ -1,1 +1,1 @@
-{"title":"Body"}
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","description":"Alert creation request.","required":["symbol","threshold_raw"],"properties":{"op":{"type":["string","null"],"description":"Comparison op (defaults to `gt`)."},"symbol":{"type":"string","description":"The symbol to watch."},"threshold_raw":{"type":"string","description":"The raw threshold (scaled i128, parsed as i64 for the engine hot path)."}},"title":"CreateAlertRequest"}}},"required":true}}

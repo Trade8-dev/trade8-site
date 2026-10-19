@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"Quotation stream","content":{"text/event-stream":{"schema":{"type":"string"}}}},"403":{"description":"Forbidden"}}}

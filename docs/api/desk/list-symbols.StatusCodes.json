@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"Tradable symbols","content":{"application/json":{"schema":{"type":"object","description":"Symbols list envelope.","required":["symbols"],"properties":{"symbols":{"type":"array","items":{},"description":"The tradable symbols with feed/instrument states."}},"title":"SymbolsResponse"}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}

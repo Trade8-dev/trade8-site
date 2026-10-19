@@ -1,1 +1,1 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{}}},"required":true}}
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","description":"EOD finalize request (Cron proxy-back).","properties":{"date":{"type":["string","null"],"description":"The date to close (`YYYY-MM-DD`); defaults to today."}},"title":"EodFinalizeRequest"}}},"required":true}}

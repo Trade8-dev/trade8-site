@@ -1,1 +1,1 @@
-{"title":"Body"}
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","description":"Purge request (default 30 days, clamped 1..365).","properties":{"days":{"type":["integer","null"],"format":"int64","description":"Retention days (clamped 1..365)."}},"title":"PurgeRequest"}}},"required":true}}

@@ -1,1 +1,1 @@
-{"parameters":[{"name":"page","in":"path","description":"RFW page id","required":true,"schema":{"type":"string"}}]}
+{"parameters":[{"name":"page","in":"path","description":"Admin page slug","required":true,"schema":{"type":"string"}}]}

@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"Session action","content":{"application/json":{"schema":{"type":"object","description":"Session state read/mutation result.","required":["state"],"properties":{"state":{"type":"string","description":"The session state (`open` | `closed`)."}},"title":"SessionStateResponse"}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}
