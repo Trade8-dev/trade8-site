@@ -3,7 +3,7 @@
   "name": "Trade8",
   "org": "Trade8-dev",
   "domain": "trade8.dev",
-  "tagline": "Professional trading on Sentin8 - order management, broker connectivity, synchronous pre-trade risk, market data, bar aggregation, and day P&L as one broker-side vertical.",
+  "tagline": "Secure Post-Quantum-Safe Trading Platform That Heals and Scales Itself.",
   "accent": "#B85450",
   "pillarsLead": "Trade8 inherits the Sentin8 security model and adds trading guarantees - synchronous risk gates on every mutation, deterministic P&L from fill replay, and adapter-pluggable market data.",
   "pillars": [
