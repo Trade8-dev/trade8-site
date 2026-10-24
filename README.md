@@ -1,4 +1,8 @@
 # Trade8:Site - trade8.dev
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](../LICENSE)
+[![Built with Rust](https://img.shields.io/badge/Built%20with-Rust-orange.svg)](https://www.rust-lang.org/)
+[![Docs](https://img.shields.io/badge/docs/read-3aa757.svg)](https://trade8.dev/docs/services/site)
+[![Website](https://img.shields.io/badge/website-trade8.dev-1a73e8.svg)](https://trade8.dev/docs/products/trade8-site)
 
 > The Trade8 public website at [trade8.dev](https://trade8.dev): every
 > product, app, and SDK of the vertical, with its domain invariants
