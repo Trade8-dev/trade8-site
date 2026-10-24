@@ -1,4 +1,4 @@
-# README.md: Trade8:Site - trade8.dev
+# Trade8:Site - trade8.dev
 
 > The Trade8 public website at [trade8.dev](https://trade8.dev): every
 > product, app, and SDK of the vertical, with its domain invariants
