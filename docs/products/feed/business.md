@@ -155,5 +155,5 @@ custom_edit_url: https://github.com/Trade8-dev/trade8-feed/edit/main/BUSINESS.md
 
 ---
 
-**Design attribution:** trade8:feed and its underlying concepts were designed by Hamid Jahanzad <Hamid@Jahanzad.com>.
+**Architecture & Design:** trade8:feed and its underlying concepts were designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
 
