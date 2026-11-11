@@ -3,7 +3,7 @@
   "name": "Trade8",
   "org": "Trade8-dev",
   "domain": "trade8.dev",
-  "tagline": "Secure Post-Quantum-Safe Trading Platform That Heals and Scales Itself.",
+  "tagline": "Open-Source Post-Quantum Trading Platform (Apache 2.0): order routing and market connectivity in Rust - heals and scales itself.",
   "accent": "#B85450",
   "pillarsLead": "Trade8 inherits the Sentin8 security model and adds trading guarantees - synchronous risk gates on every mutation, deterministic P&L from fill replay, and adapter-pluggable market data.",
   "pillars": [

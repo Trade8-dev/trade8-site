@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trade8.dev/sitemap.xml
