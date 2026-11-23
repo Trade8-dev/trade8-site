@@ -6,7 +6,7 @@
   "tagline": "Open-Source Secure Post-Quantum-Safe Trading Platform That Heals and Scales Itself.",
   "heroEyebrow": "Open-Source Trading",
   "heroTitle": "Trade8: Autonomous Quantum-Safe Trading",
-  "heroDescription": "Order management and routing for professional desks: one order lifecycle from submit to terminal state, pre-trade risk that blocks before acceptance, one normalized market-data shape across vendor adapters, multi-interval OHLCV bars, and P&L rebuilt deterministically from fills. Broker and venue connectivity is a plug-in seam, so adding a destination never touches the desk logic.",
+  "heroDescription": "Order management and routing for professional desks. One order lifecycle, pre-trade risk that blocks before acceptance, normalized market data, and P&L rebuilt from fills.",
   "accent": "#B85450",
   "pillarsLead": "Trade8 inherits the Sentin8 security model and adds trading guarantees - synchronous risk gates on every mutation, deterministic P&L from fill replay, and adapter-pluggable market data.",
   "pillars": [
